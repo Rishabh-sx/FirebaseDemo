@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:tint="@android:color/white"
+                android:id="@+id/iv_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d_10dp"
+                android:src="@drawable/ic_signup_back" />
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                fontPath="fonts/Ubuntu-Regular_0.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Toolbar Text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/d_16sp"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_margin="@dimen/d_8dp"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/d_14sp"
+                fontPath="fonts/Ubuntu-Regular_0.ttf"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    tools:context="app.rishabh.firebase.activities.StorageActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d_30dp"
+            android:paddingRight="@dimen/d_30dp">
+
+            <RelativeLayout
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/d_150dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_signup_img_holder" />
+
+                <ImageView
+                    android:id="@+id/iv_image_select"
+                    android:layout_width="@dimen/d_50dp"
+                    android:layout_height="@dimen/d_50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_signup_camera" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/d_15dp"
+                android:textSize="@dimen/d_16sp"
+                android:textColor="@color/c_text_grey"
+
+                android:text="Storage Link in Database"
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:autoLink="web"
+                android:layout_marginTop="@dimen/d_15dp"
+                android:id="@+id/tv_db_data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/d_16sp"
+                android:text="Nothing is uploaded yet :-("
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+
+            <Button
+
+                android:id="@+id/btn_post_db"
+                style="?android:attr/borderlessButtonStyle"
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="@dimen/d_200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

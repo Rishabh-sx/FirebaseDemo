@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Firebase Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="verify_drivers">Verify Drivers</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+
+    <!-- Edit Profile -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="contact">Contact</string>
+    <string name="institute">Institute</string>
+    <string name="city">City</string>
+    <string name="pin_code">PinCode</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="done">Done</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="affiliation_code">Affiliation Code</string>
+    <string name="select_from_options">Select From Options</string>
+
+    <string name="prompt_institute_name">Institution field can\'t be empty</string>
+    <string name="prompt_affiliation_code">Affiliation code field can\'t be empty</string>
+    <string name="prompt_contact">Contact field can\'t be empty</string>
+    <string name="prompt_address">Address field can\'t be empty</string>
+    <string name="prompt_city">City field can\'t be empty</string>
+    <string name="prompt_pin_code">PinCode field can\'t be empty</string>
+    <string name="prompt_state">State field can\'t be empty</string>
+    <string name="prompt_image">Please select image</string>
+
+
+    <string name="Signup">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="already_registered">Already Registered? Click here to Login</string>
+    <string name="forget_passwd">Forgot Password ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Not yet Registered?</string>
+    <string name="create_account">Create an Account</string>
+
+
+    <string name="prompt_email">Please enter email</string>
+    <string name="prompt_password">Please enter password</string>
+    <string name="prompt_invalid_email">Please enter a valid email Address</string>
+
+    <string name="prompt_password_min">Password must be more than 7 characters</string>
+    <string name="prompt_password_max">Password should not be more than 20 characters</string>
+    <string name="edit">Edit</string>
+
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="submit">Send</string>
+    <string name="send">Send</string>
+    <string name="rishabhsx_gmail_com"><u>rishabhsx@gmail.com</u></string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    tools:context="app.rishabh.firebase.activities.RealtimeDbActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d_30dp"
+            android:paddingRight="@dimen/d_30dp">
+
+
+            <TextView
+                android:layout_marginTop="@dimen/d_15dp"
+                android:textSize="@dimen/d_16sp"
+                android:text="Data available in database - "
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:textColor="@color/c_text_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:layout_marginTop="@dimen/d_15dp"
+                android:id="@+id/tv_db_data"
+                android:textSize="@dimen/d_16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Nothing is posted yet :-("
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/d_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_data_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Type here to play with database"
+                    android:imeOptions="actionGo"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/d_4dp"
+                    android:textColor="@color/c_text_grey"
+                    android:translationY="1dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/d_15dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@color/c_view_light_grey" />
+
+            <Button
+                android:id="@+id/btn_post_db"
+                style="?android:attr/borderlessButtonStyle"
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="@dimen/d_200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="Post to database"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    tools:context="app.rishabh.firebase.activities.HomeActivity">
+    <include layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d_30dp"
+            android:paddingRight="@dimen/d_30dp">
+
+            <Button
+                android:id="@+id/btn_play_db"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button"
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="@dimen/d_200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Play with database"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+
+            <Button
+                android:id="@+id/btn_play_storage"
+                fontPath="fonts/Ubuntu-Medium_0.ttf"
+                android:layout_width="@dimen/d_200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button"
+
+                android:text="Play with storage"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
